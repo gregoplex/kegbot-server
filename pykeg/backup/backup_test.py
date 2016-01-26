@@ -93,8 +93,7 @@ class BackupTestCase(TransactionTestCase):
 
         try:
             # Restore must fail when something is already installed.
-            self.assertRaises(backup.AlreadyInstalledError, backup.restore_from_directory,
-                    backup_dir)
+            self.assertRaises(backup.AlreadyInstalledError, backup.restore_from_directory(backup_dir, self.storage))
 
             # Erase and restore.
             backup.erase(self.storage)
