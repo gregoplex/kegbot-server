@@ -267,7 +267,7 @@ def restore_media(backup_dir, storage):
 def restore_from_directory(backup_dir, storage=default_storage):
     if db_impl.is_installed():
         raise AlreadyInstalledError('You must erase this system before restoring.')
-    
+
     logger.info('Restoring from {} ...'.format(backup_dir))
 
     metadata = verify_backup_directory(backup_dir)
