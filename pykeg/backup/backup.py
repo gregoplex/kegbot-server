@@ -269,7 +269,6 @@ def restore_from_directory(backup_dir, storage=default_storage):
     if not db_impl.is_installed():
         raise AlreadyInstalledError('You must erase this system before restoring.')
 
-
     metadata = verify_backup_directory(backup_dir)
     current_engine = db_impl.engine_name()
     saved_engine = metadata[META_DB_ENGINE]
