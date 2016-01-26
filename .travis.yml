@@ -10,6 +10,7 @@ install:
 
 services:
   - redis-server
+  - mysql
 
 before_script:
   - mysql -e 'create database kegbot_travis_test'
