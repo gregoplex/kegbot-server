@@ -61,7 +61,7 @@ def is_installed():
     output = subprocess.check_output(cmd, shell=True)
     logger.info('result: {}'.format(output))
     #return 'core_kegbotsite' in output
-    return False
+    return True
 
 
 def dump(output_fd):
