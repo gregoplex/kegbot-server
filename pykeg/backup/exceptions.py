@@ -1,4 +1,5 @@
-# Copyright 2014 Bevbot LLC, All Rights Reserved
+#
+Copyright 2014 Bevbot LLC, All Rights Reserved
 #
 # This file is part of the Pykeg package of the Kegbot project.
 # For more information on Pykeg or Kegbot, see http://kegbot.org/
@@ -21,7 +22,7 @@ class BackupError(IOError):
     """Base backup exception."""
 
 
-class AlreadyInstalledError(Exception):
+class AlreadyInstalledError(BackupError):
     """Attempt to restore against a non-pristine system."""
 
 
