@@ -21,7 +21,7 @@ class BackupError(IOError):
     """Base backup exception."""
 
 
-class AlreadyInstalledError(Exception):
+class AlreadyInstalledError(BackupError):
     """Attempt to restore against a non-pristine system."""
 
 
